@@ -2,6 +2,15 @@ p{color:black;}
 a:link{color:blue;text-decoration:none;}
 body{background-color:#46A3FF;}
 
+button{
+				width:100px;
+				height: 100px;
+     background-color: #5B00AE;}
+
+
+
+
+
 .deng-box{position:fixed;top:-40px;right:150px;z-index:9999;pointer-events:none;}
 .deng-box1{position:fixed;top:-30px;right:10px;z-index:9999;pointer-events:none}
 .deng-box2{position:fixed;top:-40px;left:150px;z-index:9999;pointer-events:none}
