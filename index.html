@@ -1,9 +1,11 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <title>GenHour Group</title>
     <style>
         * {
@@ -60,27 +62,74 @@
         }
         .msg {
             text-align: center;
-            line-height: 88px;
+            line-height: 33px;
         }
         a {
             text-decoration-line: none;
             color: #abc1ee;
         }
+		@keyframes fade { 
+from { opacity:1.0;
+} 50% { 
+opacity:0.5;
+} 
+to {
+ opacity:1.0;
+ }
+ }
+p.pos-fixed {
+color:green;
+padding:20px;
+font-size:25px;
+height:60px;
+animation:fade 600ms infinite;
+}
+#hour {
+color:purple;
+padding:20px;
+font-size:25px;
+height:60px;
+animation:fade 600ms infinite;
+}
+#gen {
+color:blue;
+padding:20px;
+font-size:25px;
+height:60px;
+animation:fade 600ms infinite;
+}
+#kun {
+color:brown;
+padding:20px;
+font-size:25px;
+height:60px;
+animation:fade 600ms infinite;
+}
+
+}
+		
+		
+		
+		
+		
+		
+		
+		
     </style>
 </head>
 <body>
     <div class="container">
         <div class="login-wrapper">
-            <div class="header"> GenHour </div>
+            <div class="header" span id="kun"> ༒ </div>
             <div class="form-wrapper">
                 <input type="text" name="username" value="" class="input-item">
                 <input type="password" name="password" placeholder="" class="input-item">
-                <div class="btn">GenHour</div>
+                <div class="btn"><span id="gen" >Gen</span><span id="hour">Hour</span>
+				</div>
             </div>
-            <div class="msg">
-                Don't have account?
-                <a href="./--index.html"  >Entry</a>
-            </div>
+<div class="msg">
+ <span id="gen" >☬</span><span id="hour" ></span><span id='gen' >꧁</span><a href="./--index.html"  ><span id="gen" >༒</span></a><span id="hour" >꧂</span><span id="gen" >☬</span>
+</div>
         </div>
     </div>
 </body>
