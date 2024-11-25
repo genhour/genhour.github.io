@@ -1,0 +1,29 @@
+<! doctype html><html><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1.0" /><title>learn more about south america</title>
+<style>
+#country{border:1px solid black;padding:15px;}p.question{font-size:200%;}</style>
+</head><body>
+<p class="question">which contry would you like to know more about?</p>
+<div id="country">Foo</div>
+<p class="countryOption"><a href="./countries.html #uruguay">uruguay</a></p>
+<p class="countryOption"><a href="./countries.html #paraguay">paraguay</a></p>
+<script src="../jquery.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+	$("#country").hide();
+	$("p.countryOption a").click(function(event){
+		event.preventDefault();
+		$("p.countryOption").fadeOut();
+		$("#country").load($(this).attr("href"));
+		$("#country").fadeIn();
+	});
+});
+</script>
+</body></html>
+
+
+
+
+
+
+
+
